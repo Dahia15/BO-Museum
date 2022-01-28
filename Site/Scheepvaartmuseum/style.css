@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,11 +6,13 @@
 }
 body {
     height: 100vh;
-    
     justify-content: center;
     align-items: center;
-    background: rgb(27, 24, 31);
+    background: #24252a;
+    font-family: 'Poppins', sans-serif;
 }
+
+/* Navbar */
 
 header {
     display: flex;
@@ -134,7 +137,6 @@ header {
   }
   
 .slider {
-    position: absolute;
     width: 100%;
     overflow: hidden;
     left: 0%;
@@ -186,14 +188,202 @@ header {
   margin-left: -250%;
 }
 
-#section-b{
+/* History */
+
+#history{
   padding:50px;
-  background:#24252a;
+  background:#1b181f;
   color:#fff;
   justify-content: center;
   text-align:center;
   font-size: larger;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+}
+
+/* Collection */
+
+
+
+.tentoonstellingen{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  color: rgb(255, 255, 255);
+
+}
+
+img:hover{
+  transform: scale(1.05);
+}
+
+img{
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.2s transform;
+  object-fit: cover;
+}
+
+h2{
+  font-size: 36px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #7649b1;
+}
+
+
+
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h4{
+  text-align: left;
+  font-weight: 600;
+  margin: 10px 0;
+  color: rgb(255, 255, 255);
+}
+
+.noordvleugel-col{
+  
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.noordvleugel-col img{
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.recensies-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: content-box;
+  transition: 0.5s;
+  
+}
+
+.recensies-col img{
+  width: 100%;
+  border-radius: 80%;
+
+}
+
+
+.containerf{
+	max-width: 1170px;
+	margin:auto;
+}
+.rowf{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #1b181f;
+  padding: 70px 0;
+	justify-content: center;
+	align-items: center;
+}
+.footer-col{
+   width: 33.33%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-last{
+	width: 33.33%;
+	padding: 0 0px;
+	position: right;
+ }
+ .footer-last h4{
+	 font-size: 18px;
+	 color: #ffffff;
+	 text-transform: capitalize;
+	 margin-bottom: 35px;
+	 font-weight: 500;
+	 position: relative;
+ }
+ .footer-last h4::before{
+	 content: '';
+	 position: absolute;
+	 left:0;
+	 bottom: -10px;
+	 background-color: #e91e63;
+	 height: 2px;
+	 box-sizing: border-box;
+	 width: 50px;
+ }
+ .footer-last ul li:not(:last-child){
+	 margin-bottom: 10px;
+ }
+ .footer-last ul li a{
+	 font-size: 16px;
+	 text-transform: capitalize;
+	 color: #ffffff;
+	 text-decoration: none;
+	 font-weight: 300;
+	 color: #bbbbbb;
+	 display: block;
+	 transition: all 0.3s ease;
+ }
+ .footer-last ul li a:hover{
+	 color: #ffffff;
+	 padding-left: 8px;
+ }
+
+.adres{
+	color: #bbbbbb;
+}
+
+.openingstijden{
+	color: #bbbbbb;
 }
 
