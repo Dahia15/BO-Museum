@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+  scroll-behavior: smooth;
+}
 body {
     height: 100vh;
     justify-content: center;
@@ -211,7 +215,7 @@ header {
   text-align: center;
   padding-top: 50px;
   color: rgb(255, 255, 255);
-
+  max-width: 1500px;
 }
 
 img:hover{
@@ -263,20 +267,60 @@ h4{
 
 }
 
-.recensies-col{
-  flex-basis: 31%;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: content-box;
-  transition: 0.5s;
-  
+.recensies{
+  padding: 40px ;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+
+
+}
+.inner{
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+  padding-bottom: 40px;
 }
 
-.recensies-col img{
-  width: 100%;
-  border-radius: 80%;
+.recensies-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.recensies-col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.recensie{
+  background: rgb(230, 223, 231);
+  padding: 30px;
+  border-radius: 30px;
+}
+.recensie img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  margin: 20px 0;
+}
 
+@media screen and (max-width:960px) {
+.recensies-col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.recensies-col{
+  flex: 100%;
+  max-width: 100%;
+}
 }
 
 
@@ -387,3 +431,20 @@ ul{
 	color: #bbbbbb;
 }
 
+.top{
+  width: 50px;
+  height: 50px;
+  background-color: #737a85;
+  border: none;
+  font-size: 150%;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5px;
+  color: white;
+  position: fixed;
+  bottom: 120px;
+  right: 120px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
