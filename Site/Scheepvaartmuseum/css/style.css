@@ -175,9 +175,7 @@ header {
 }
 .dots label:hover {background: #fff;}
 #img1:checked ~ .m1 {
-    margin-left: 1,5;
-    
-    
+    margin-left: 1.5px;
 }
 #img2:checked ~ .m2 {
     margin-left: -70%;
@@ -447,4 +445,8 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.ie{
+  color: white;
 }

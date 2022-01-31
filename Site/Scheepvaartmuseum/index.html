@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scheepvaart Museum</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!--    header starts here     -->
 
     <header id="header">
-        <a class="logo" href="http://33046.hosts1.ma-cloud.nl/Scheepvaart/"><img src="marlogo.svg" alt="logo"></a>
+        <a class="logo" href="http://33046.hosts1.ma-cloud.nl/Scheepvaart/"><img src="img/route/marlogo.svg" alt="logo"></a>
         <nav>
             <ul class="nav__links">
                 <li><a href="#tentoon">Collectie</a></li>
                 <li><a href="#history">Over ons</a></li>
                 <li><a href="#foot">Contact</a></li>
-                <a class="logo" href="engels.html"><img src="flag.png" alt="flag"></a>
+                <li><a class="logo" href="engels.html"><img src="img/route/flag.png" alt="flag"></a></li>
+                
             </ul>
         </nav>
         <a class="cta" href="https://tickets.hetscheepvaartmuseum.nl/nl/tickets">Tickets</a>
@@ -43,11 +44,11 @@
             <input type="radio" name="slide" id="img3">
             <input type="radio" name="slide" id="img4">
 
-            <img src="./1.jpg" class="m1" alt="img1">
-            <img src="./2.jpg" class="m2" alt="img2">
-            <img src="./3.jpg" class="m3" alt="img3">
-            <img src="./4.jpg" class="m4" alt="img4">
-            <img src="./5.jpg" class="m5" alt="img5">
+            <img src="img/route/1.jpg" class="m1" alt="img1">
+            <img src="img/route/2.jpg" class="m2" alt="img2">
+            <img src="img/route/3.jpg" class="m3" alt="img3">
+            <img src="img/route/4.jpg" class="m4" alt="img4">
+            <img src="img/route/5.jpg" class="m5" alt="img5">
         </div>
         
         <div class="dots">
@@ -108,8 +109,27 @@
   
         </div>
       </section>
+
+      <!--    Interactive starts here    -->
+      
+      <div id="route">
+        <img id="myimage" src="img/route/gebouw.png"  alt="ingang">
+        <div id="myinteraction">
+            <div class="knop ie" id="mytitle">hier komt de titel</div>
+            <input class="knop" type="text" id="myinput" autocomplete="off">
+            <input  class="voerin" type="button" value="voer in" onclick="getinput()">
+            <h3 class="knop ie">kies welke richting je op wilt:</h3 >
+            <nav class="knop">
+                <button id="knopNoord" onclick="goDirection('noord')">Noord</button>
+                <button id="knopOost" onclick="goDirection('oost')">Oost</button>
+                <button id="knopWest" onclick="goDirection('west')">West</button>
+                <button id="knopZuid" onclick="goDirection('zuid')">Zuid</button>
+            </nav>
+        </div>
+      </div>
     
     <!--    review starts here      -->
+
     <section id="recensies">
     <div class="recensies">
         <div class="inner">
@@ -158,6 +178,7 @@
       </section>
 
     <!--    footer starts here      -->
+
     <section id="foot">
     <footer class="footer">
         <div class="containerf">
