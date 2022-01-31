@@ -28,6 +28,7 @@ header {
   
   .logo {
     cursor: pointer;
+    user-select: none;
   }
   
   .nav__links a,
@@ -88,7 +89,7 @@ header {
   }
   
   .overlay--active {
-    width: 100%;
+    width: 50%;
     user-select: none;
   }
   
